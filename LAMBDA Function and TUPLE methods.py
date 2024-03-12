@@ -2,34 +2,24 @@
 # coding: utf-8
 
 # ## LAMBDA Function
-
 # A lambda function is a small anonymous function.
-# 
 # A lambda function can take any number of arguments, but can only have one expression.
 
 # In[1]:
-
-
 x = lambda x, y : x**y
 x(2,3)
 
 
 # In[2]:
-
-
 y = lambda x, y, z : x+y+z
 y(8,9,10)
 
 
 # In[7]:
-
-
 z = lambda x : x*2
 
 
 # In[8]:
-
-
 z(3)
 
 
