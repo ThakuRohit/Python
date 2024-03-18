@@ -7,9 +7,9 @@ Inheritance allows us to define a class that inherits all the methods and proper
 Parent class is the class being inherited from, also called base class.
 
 Child class is the class that inherits from another class, also called derived class.
+
+    
 # In[4]:
-
-
 class Person:
     def __init__(self, fname, lname):
         self.firstname = fname
@@ -30,9 +30,9 @@ There are two classes named as "Person" and "Student".
 
 "Student" class is empty class which inherit the property of the class "Person""Person" class is parent class.
 "Student" class is child class of "Person" (parent) class.
+
+
 # In[5]:
-
-
 class Person:
     def __init__(self, fname, lname):
         self.firstname = fname
@@ -52,11 +52,13 @@ x.printname()
 In this above example code,
 "Student" class has its own "__init__",
 that means "Student" class no more inherit the property of "__init__" parameter of "Person" class.
+
+
 # #### To overcome with this problem
 Rewriting the "__init__" function in child class mentioning the parent class
+
+
 # In[11]:
-
-
 class Person:
     def __init__(self, fname, lname):
         self.firstname = fname
@@ -75,11 +77,13 @@ x.printname()
 Even after adding "__init__" function in child class,
 if we mention "__init__" function of parent class,
 child class "Student" will inherit the property of parent class "Person".
+
+
 # ## SUPER() FUNCTION
 Python has a super() function that will make the child class inherit all the methods and properties from its parent
+
+
 # In[12]:
-
-
 class Subject:
     def __init__(self, name, teacher):
         self.name = name
@@ -107,10 +111,7 @@ print(Deep_learning.info())
 
 
 # ## Add properties in child class
-
 # In[16]:
-
-
 class Person:
     def __init__(self, fname, lname):
         self.firstname = fname
